@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Lingua Daily — английский в своём ритме</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="#top"><span class="brand-mark">L</span>lingua<span>daily</span></a>
+    <button class="profile-level" id="levelButton"><small>ВАШ УРОВЕНЬ</small><b id="levelBadge">Выбрать уровень</b><i><em id="levelMeter"></em></i><span>Изменить маршрут →</span></button>
+    <nav><a class="active" href="#top">◉ &nbsp; Сегодня</a><a href="#roadmap">☷ &nbsp; Программа</a><a href="#lesson">✦ &nbsp; Урок</a><a href="#progress">⌁ &nbsp; Прогресс</a></nav>
+    <div class="side-note"><b>Без гонки</b><br>Примерный урок — 20–25 минут. Останавливайтесь, когда вам удобно.</div>
+  </aside>
+  <main class="content" id="top">
+    <header><div><p class="date" id="date"></p><h1>Английский, который <em>вписывается</em><br>в обычный вечер.</h1></div><button class="circle" id="levelButton2">A</button></header>
+    <section class="welcome">
+      <div><p class="caps">ВАШ СЛЕДУЮЩИЙ ШАГ · <span id="lessonPosition">УРОК 1 ИЗ 12</span></p><h2 id="heroTitle">Начинаем говорить: <i>Hello, I’m...</i></h2><p id="heroIntro">Никакой спешки. Сегодня разберём основу, увидим её в живых примерах и напишем первую фразу.</p><div class="details"><span>≈ 20–25 мин</span><span>4 части</span><span>Можно прерваться</span></div><button class="main-button" id="startLesson">Продолжить урок <b>→</b></button></div><div class="art"><div class="sun"></div><span class="bubble a">Hello!</span><span class="bubble b">Nice to meet you!</span><div class="person p1"></div><div class="person p2"></div><div class="book"></div></div>
+    </section>
+    <section class="today-path" id="progress"><div><p class="caps">СЕГОДНЯШНИЙ УРОК</p><b id="stepCounter">0 из 4 частей</b></div><div class="progressbar"><i id="progressFill"></i></div><span id="percent">0%</span><button class="end-button" id="endToday">Закончить на сегодня</button></section>
+    <section class="roadmap-section" id="roadmap"><div class="section-heading"><div><p class="caps">ПОНЯТНЫЙ МАРШРУТ</p><h2>Не один урок, а <em>система.</em></h2></div><p>Каждая следующая тема открывается после завершения предыдущей. В любой день можно повторить материал.</p></div><div class="level-tabs" id="levelTabs"></div><div class="lesson-roadmap" id="lessonRoadmap"></div></section>
+    <section class="lesson-section" id="lesson"><div class="section-heading"><div><p class="caps" id="lessonKicker">УРОК</p><h2 id="lessonHeading">Разбираем без сложных слов</h2></div><p id="lessonTime">Четыре короткие части. Можно делать с паузами.</p></div><div id="lessonBody"></div></section>
+  </main>
+</div>
+<div class="modal-backdrop" id="modal"><section class="modal"><button class="close" id="close">×</button><div id="modalContent"></div></section></div>
+<script src="app.js"></script>
+</body></html>
